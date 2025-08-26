@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Exercícios JS</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+    
+    <div class="menu">
+        <button onclick="carregaTarefa(1)">Tarefa 1</button>
+        <button onclick="carregaTarefa(2)">Tarefa 2</button>
+        <button onclick="carregaTarefa(3)">Tarefa 3</button>
+        <button onclick="carregaTarefa(4)">Tarefa 4</button>
+        <button onclick="carregaTarefa(5)">Tarefa 5</button>
+    </div>
+
+    <div class="tarefas">
+        <div id="resultado">
+            <p>Escolha uma tarefa para ver o resultado.</p>
+        </div>
+        
+        <div id="estrutura" style="border-top: 2px solid black;">
+            <p></p>
+        </div>
+    </div>
+    
+
+    <script src="scripts/Tarefa1.js"></script>
+    <script src="scripts/Tarefa2.js"></script>
+    <script src="scripts/Tarefa3.js"></script>
+    <script src="scripts/Tarefa4.js"></script>
+    <script src="scripts/Tarefa5.js"></script>
+
+    <script>
+        function carregaTarefa(num) {
+            if (num === 1) mostrarTarefa1();
+            if (num === 2) mostrarTarefa2();
+            if (num === 3) mostrarTarefa3();
+            if (num === 4) mostrarTarefa4();
+            if (num === 5) mostrarTarefa5();
+        }
+    </script>
+    
+</body>
+</html>
