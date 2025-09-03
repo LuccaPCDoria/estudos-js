@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Exercícios JS</title>
     <link rel="stylesheet"  href="projetos-js/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
 </head>
 <body>
-    <h1>Exercícios de JavaScript</h1>
+    <p style="font-size: 48px;">Exercícios de JavaScript</p>
     
     <div class="menu">
         <button onclick="carregaTarefa(1)">Tarefa 1</button>
@@ -18,15 +23,43 @@
     </div>
 
     <div class="tarefas">
-        <div id="resultado">
-            <p>Escolha uma tarefa para ver o resultado.</p>
+        <div id="questao">
+            <p style="font-size: 20px;">Escolha uma tarefa para ver o resultado.</p>
         </div>
-        
-        <div id="estrutura" style="border-top: 2px solid black;">
-            <p></p>
+        <div id="estrutura">
+            
+        </div>
+        <div id="resultado" class="resultado">
+            
         </div>
     </div>
-    
+    <div class="tarefas">
+        <div class="problema">
+            <p>Problema:</p>
+            <ul>
+                <li>Problema 1</li>
+                <li>Problema 2</li>
+                <li>Problema 3</li>
+            </ul>
+        </div>
+        <div class="algoritimo">
+            <div>
+                <span>Algoritimo:</span>
+                <div class="bolinhas">
+                    <div class="bolinha-vermelha"></div>
+                    <div class="bolinha-amarela"></div>
+                    <div class="bolinha-verde"></div>
+                </div>
+            </div>
+            <pre><code class="language-javascript">// Cole seu código JavaScript aqui
+let nome = "Lucca";
+</code></pre>    
+        </div>
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p class="saida">A saida do programa foi está.</p>
+        </div>
+    </div>
 
     <script src="projetos-js/scripts/Tarefa1.js"></script>
     <script src="projetos-js/scripts/Tarefa2.js"></script>

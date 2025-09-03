@@ -9,11 +9,17 @@ let cidade = "João Pessoa";
 
 console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + cidade);
 
+document.getElementById("questao").innerHTML = 
+`
+<h2>Criar três variaveis</h2>
+<h2>Saida: Meu nome é X, tenho Y anos e moro em Z. </h2>
+`
+
 document.getElementById("resultado").innerHTML =
-`<p>Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>`;
+`<p style="border-top: 2px solid black;">Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>`;
 document.getElementById("estrutura").innerHTML = 
 `
-<p>
+<p style="border-top: 2px solid black;">
  Estrutura:<br><br>
  let nome = "${nome}";<br>
  let idade = ${idade};<br>
