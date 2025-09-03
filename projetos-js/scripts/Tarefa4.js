@@ -65,5 +65,6 @@ if(numero1 > numero2){
         ${resultado}
     </p>
 </div>
-`;
+`
+Prism.highlightAll();
 }

@@ -69,7 +69,8 @@ if(nota >= 7 && nota <= 10){
         <p class="saida">Resultado: ${resultado}</p> 
     </p>
 </div>
-  `;
+`
+Prism.highlightAll();
 }
 // Perfect
 // Sem duvidas

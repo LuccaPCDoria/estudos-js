@@ -44,7 +44,7 @@ document.getElementById("tarefas").innerHTML =
         </div>
     </div>
     <pre><code class="language-javascript">let numero1 = ${numero1};
-let numero2 =${numero2};
+let numero2 = ${numero2};
 
 console.log(numero1 + " + " + numero2 + " = " + (numero1 + numero2))
 console.log(numero1 + " - " + numero2 + " = " + (numero1 - numero2))
@@ -61,7 +61,8 @@ console.log(numero1 + " / " + numero2 + " = " + (numero1 / numero2))
         <p class="saida">${numero1} / ${numero2} = ${numero1 / numero2}</p>
     </p>
 </div>
-`;
+`
+Prism.highlightAll();
 }
 // Perfect
 // Sem duvidas

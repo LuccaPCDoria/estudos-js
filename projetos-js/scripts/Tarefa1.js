@@ -39,6 +39,7 @@ console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + ci
     <p class="saida">Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>
 </div>
 `
+Prism.highlightAll();
 
 }
 
