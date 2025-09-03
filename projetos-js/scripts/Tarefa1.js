@@ -12,7 +12,7 @@ console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + ci
 document.getElementById("tarefas").innerHTML = 
 `
 <div class="problema">
-    <p>Problema:</p>
+    <span>Problema:</span>
     <ul>
         <li>Criar três variaveis</li>
         <li>saida: Meu nome é X, tenho Y anos e moro em Z.</li>
@@ -35,7 +35,7 @@ console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + ci
 </code></pre>    
 </div>
 <div class="resultado">
-    <p>Resultado:</p>
+    <span>Resultado:</span>
     <p class="saida">Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>
 </div>
 `

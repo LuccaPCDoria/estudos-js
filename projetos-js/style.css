@@ -46,6 +46,9 @@ h1 {
   font-size: 24px;
   text-align: start;
 }
+ul{
+  margin: 15px 0;
+}
 .problema ul li{
   font-size: 20px;
 }
@@ -91,7 +94,7 @@ background-color: #FFBD2E;
   background: #272822;
 }
 pre{
-  margin: 20px;
+  margin: 15px;
 }
 .resultado{
   background-color: #007BFF;
@@ -102,6 +105,7 @@ pre{
   text-align: start;
 }
 .saida{
-  margin: 10px;
+  margin: 15px;
   font-size: 20px;
 }
+

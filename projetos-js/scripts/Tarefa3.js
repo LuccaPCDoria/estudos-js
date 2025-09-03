@@ -23,27 +23,52 @@ function mostrarTarefa3(){
 
   console.log(resultado);
 
-  // Mostrando o resultado na tela
-  document.getElementById("resultado").innerHTML =
-  `<p>Nota: ${nota} <br><br> Resultado: ${resultado}</p>`;
-
   // Mostrando a estrutura do código
-  document.getElementById("estrutura").innerHTML = 
+  document.getElementById("tarefas").innerHTML = 
   `
-  <p>
-   Estrutura:<br><br>
-   let nota = ${nota};<br><br>
+  <div class="problema">
+    <span>Problema:</span>
+    <ul>
+        <li>Crie uma variável nota (de 0 a 10)</li>
+        <li>
+            Use if para verificar:
+            <ul>
+                <li>Se a nota for maior ou igual a 7 -> mostre "Aprovado".</li>
+                <li>Se for entre 5 e 6 -> mostre "Recuperação".</li>
+                <li>Se for menor que 5 -> mostre "Reprovado".</li>
+            <ul>
+        </li>
+    </ul>
+</div>
+<div class="algoritimo">
+<div>
+    <span>Algoritimo:</span>
+    <div class="bolinhas">
+        <div class="bolinha-vermelha"></div>
+        <div class="bolinha-amarela"></div>
+        <div class="bolinha-verde"></div>
+    </div>
+</div>
+<pre><code class="language-javascript">let nota = ${nota};
 
-   if(nota >= 7 && nota <= 10){<br>
-   &numsp;&numsp;console.log("Aprovado");<br>
-   }else if(nota >= 5 && nota <= 6){<br>
-   &numsp;&numsp;console.log("Recuperação");<br>
-   }else if(nota >= 0 && nota < 5){<br>
-   &numsp;&numsp;console.log("Reprovado");<br>
-   }else{<br>
-   &numsp;&numsp;console.log("Erro ao apresentar o resultado");<br>
-   }
-  </p>
+if(nota >= 7 && nota <= 10){
+    console.log("Aprovado");
+}else if(nota >= 5 && nota <= 6){
+    console.log("Recuperação");
+}else if(nota >= 0 && nota < 5){
+    console.log("Reprovado");
+}else{
+    console.log("Erro ao apresentar o resultado");
+}
+</code></pre>    
+</div>
+<div class="resultado">
+    <span>Resultado:</span>
+    <p class="saida">
+        <p class="saida">Nota: ${nota}</p>
+        <p class="saida">Resultado: ${resultado}</p> 
+    </p>
+</div>
   `;
 }
 // Perfect
