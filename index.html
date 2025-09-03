@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
 </head>
 <body>
-    <p style="font-size: 48px;">Exercícios de JavaScript</p>
+    <p style="font-size: 48px; margin: 20px;">Exercícios de JavaScript</p>
     
     <div class="menu">
         <button onclick="carregaTarefa(1)">Tarefa 1</button>
@@ -22,43 +22,8 @@
         <button onclick="carregaTarefa(5)">Tarefa 5</button>
     </div>
 
-    <div class="tarefas">
-        <div id="questao">
-            <p style="font-size: 20px;">Escolha uma tarefa para ver o resultado.</p>
-        </div>
-        <div id="estrutura">
-            
-        </div>
-        <div id="resultado" class="resultado">
-            
-        </div>
-    </div>
-    <div class="tarefas">
-        <div class="problema">
-            <p>Problema:</p>
-            <ul>
-                <li>Problema 1</li>
-                <li>Problema 2</li>
-                <li>Problema 3</li>
-            </ul>
-        </div>
-        <div class="algoritimo">
-            <div>
-                <span>Algoritimo:</span>
-                <div class="bolinhas">
-                    <div class="bolinha-vermelha"></div>
-                    <div class="bolinha-amarela"></div>
-                    <div class="bolinha-verde"></div>
-                </div>
-            </div>
-            <pre><code class="language-javascript">// Cole seu código JavaScript aqui
-let nome = "Lucca";
-</code></pre>    
-        </div>
-        <div class="resultado">
-            <p>Resultado:</p>
-            <p class="saida">A saida do programa foi está.</p>
-        </div>
+    <div class="tarefas" id="tarefas">
+        <p style="font-size: 20px;">Escolha uma tarefa para ver o resultado.</p>
     </div>
 
     <script src="projetos-js/scripts/Tarefa1.js"></script>
@@ -76,6 +41,6 @@ let nome = "Lucca";
             if (num === 5) mostrarTarefa5();
         }
     </script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
 </body>
 </html>

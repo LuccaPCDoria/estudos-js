@@ -9,25 +9,36 @@ let cidade = "João Pessoa";
 
 console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + cidade);
 
-document.getElementById("questao").innerHTML = 
+document.getElementById("tarefas").innerHTML = 
 `
-<h2>Criar três variaveis</h2>
-<h2>Saida: Meu nome é X, tenho Y anos e moro em Z. </h2>
-`
+<div class="problema">
+    <p>Problema:</p>
+    <ul>
+        <li>Criar três variaveis</li>
+        <li>saida: Meu nome é X, tenho Y anos e moro em Z.</li>
+    </ul>
+</div>
+<div class="algoritimo">
+    <div>
+        <span>Algoritimo:</span>
+        <div class="bolinhas">
+            <div class="bolinha-vermelha"></div>
+            <div class="bolinha-amarela"></div>
+            <div class="bolinha-verde"></div>
+        </div>
+    </div>
+    <pre><code class="language-javascript">let nome = "${nome}"; 
+let idade = ${idade};
+let cidade = "${cidade}";
 
-document.getElementById("resultado").innerHTML =
-`<p style="border-top: 2px solid black;">Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>`;
-document.getElementById("estrutura").innerHTML = 
+console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + cidade);
+</code></pre>    
+</div>
+<div class="resultado">
+    <p>Resultado:</p>
+    <p class="saida">Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.</p>
+</div>
 `
-<p style="border-top: 2px solid black;">
- Estrutura:<br><br>
- let nome = "${nome}";<br>
- let idade = ${idade};<br>
- let cidade = "${cidade}";<br><br>
-
- console.log("Meu nome é " + nome + ", tenho " + idade + " anos e moro em " + cidade);
-</p>
-`;
 
 }
 
